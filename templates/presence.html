@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+<!-- Welcome Message -->
+<div class="container">
+
+    <br>
+    <h3 class="content">Presence Application</h3>
+    
+    <br>
+    <p align="justify">
+        NVIDIA JetPack SDK is the most comprehensive solution for building AI applications. It bundles all the Jetson platform software, including TensorRT, cuDNN, CUDA Toolkit, VisionWorks, GStreamer, and OpenCV, all built on top of L4T with LTS Linux kernel.
+    </p>
+    
+    <br>
+    <img class='fit' src="{{ url_for('video_feed')}}" width='75%' />
+    <br>
+    <button><a href="./history" title="">Show History</a></button>
+</div>
+
+{% endblock %}
